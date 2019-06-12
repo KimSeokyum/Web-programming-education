@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>회원가입</title>
+<script>
+function login(f){
+	var c = confirm('Are You Login...');
+	if(c==true){
+		f.method = 'GET';
+		f.action = 'login.html';
+		f.submit();
+	};
+};
+</script>
+</head>
+<body>
+<h1>Form List</h1>
+
+<form>
+<fieldset>
+<legend>회원가입정보</legend>
+ <input type="hidden" name="geo" value="fff">  
+ID <input type="text" name="text"><br>
+PASSWORD <input type="password" name="pwd"><br>
+PASSWORD CHECK <input type ="password" name="pwd"><br>
+<label for= "male">Male</label> 
+<input id="male" type="radio" name="g" value ='m'>
+
+<label for= "female">Female</label>
+<input id="female" type="radio" name="g" value="f">
+
+<label for = "aje"> Aje</label>
+<input id="aje" type="radio" name="g" value="a">
+
+<hr>
+Tel <input type="text" name="f" ><br>
+Address <input type="text" name="f"><br>
+희망기업
+<select>
+	<option value="h">Hyundai</option>
+	<option value="k">Kia</option>
+	<option value="s">SSang</option>
+	<option value="c">Chev</option>
+</select>
+<hr>
+File <input type = "file" name="ff">
+
+<hr>
+<input type="submit" onclick="login(this.form);"  value="SUBMIT">
+
+</fieldset>
+</form>
+</body>
+</html>
+

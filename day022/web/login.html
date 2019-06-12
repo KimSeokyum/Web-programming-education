@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<style>
+body{
+	text-align:center;
+	margin-top : 200px;
+}
+</style>
+<script>
+function login(f){
+	var c = confirm('Are You Login...');
+	if(c==true){
+		f.method = 'GET';
+		f.action = 'mainpage.html';
+		f.submit();
+	};
+};
+</script> 
+<title>LOGIN</title>
+</head>
+<body>
+<h1> LOGIN</h1>
+<form>
+ID <input type ="text" name="nm"><br>
+PWD <input type ="password" name="pwd"><br>
+<input type="reset" value="RESET">
+
+<input onclick="login(this.form);" type="button" value="LOGIN">
+</form>
+</body>
+</html>
