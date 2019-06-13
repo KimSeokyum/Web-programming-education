@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* button 만들기 */
+
+@import
+	url('https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Orbitron|Pacifico&display=swap')
+	;
+/* div CSS */
+
+.bt>a {
+	font-family: 'Pacifico', cursive;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	line-height: 80px;
+	display: block; /* Inline 에서 Box model로 */
+	background: yellow;
+	border: 5px solid red;
+	border-radius: 15px;
+	box-shadow: 5px 5px 5px black;
+	width: 150px;
+	height: 80px;
+	margin: 100px auto;
+}
+
+.bt>a:hover {
+	background: red;
+	color: yellow;
+	border: 5px dashed yellow;
